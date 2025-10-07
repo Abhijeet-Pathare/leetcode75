@@ -1,2 +1,17 @@
-# Ignore Java compiled class files
+# Java class files
 *.class
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+out/
+
+# Maven build folder
+target/
+
+# Gradle build folder
+build/
+.gradle/
+
+# Logs
+*.log

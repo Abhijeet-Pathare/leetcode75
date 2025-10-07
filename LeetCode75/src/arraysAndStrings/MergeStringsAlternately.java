@@ -1,6 +1,20 @@
 package arraysAndStrings;
 
 public class MergeStringsAlternately {
+    public static String mergeAlternatelyV2(String word1,String word2){
+        StringBuilder sb = new StringBuilder();
+        int l1 = word1.length();
+        int l2 = word2.length();
+        int max = Math.max(l1,l2);
+
+        for(int i=0;i<max;i++){
+            if(i<l1)
+                sb.append(word1.charAt(i));
+            if(i<l2)
+                sb.append(word2.charAt(i));
+        }
+        return sb.toString();
+    }
 
     public static String mergeAlternately(String word1, String word2) {
         StringBuilder sb = new StringBuilder();
@@ -26,7 +40,8 @@ public class MergeStringsAlternately {
         String word1 = "abcd", word2 = "pq";
         //String word1 = "ab", word2 = "pqrs";
         //String word1 = "abc",word2 = "pqr";
-       String merged = mergeAlternately(word1,word2);
+       //String merged = mergeAlternately(word1,word2);
+        String merged = mergeAlternatelyV2(word1,word2);
         System.out.println(merged);
     }
 }
