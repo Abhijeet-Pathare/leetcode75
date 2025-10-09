@@ -56,3 +56,24 @@ public class MaximumAverageSubarray1 {
  * 1 <= k <= n <= 105
  * -104 <= nums[i] <= 104
  */
+
+/**
+ * 🔹 Algorithm:
+ *
+ * Initialize two pointers:
+ * start = 0, end = 0
+ *
+ * Initialize windowSum = 0 and maxSum = -∞
+ *
+ * Expand the window by adding arr[end] to windowSum
+ *
+ * When window size reaches k:
+ *
+ * Update maxSum = max(maxSum, windowSum)
+ *
+ * Subtract arr[start] (slide the window)
+ *
+ * Move start++
+ *
+ * Repeat until end reaches the end of the array
+ */
