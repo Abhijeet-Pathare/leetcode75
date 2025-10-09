@@ -5,6 +5,7 @@ import org.w3c.dom.ls.LSOutput;
 public class ContainerWithMostWater {
 
     //This approach solves the problem but in O(n2) TC
+    //Brute Force
     public static int maxArea(int[] height) {
         int maxWater = 0;
         for(int i=0;i<height.length-1;i++){
