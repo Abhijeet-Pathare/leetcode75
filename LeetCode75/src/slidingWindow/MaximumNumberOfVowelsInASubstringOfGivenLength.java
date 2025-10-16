@@ -11,7 +11,7 @@ public class MaximumNumberOfVowelsInASubstringOfGivenLength {
             }
         }
         maxVow = Math.max(count,maxVow);
-        int j = 0;
+        int j = 0; //instead of using j we can also use String.valueOf(s.charAt(i-k)) result will be same
         for(int i=k;i<s.length();i++){
             if(vowels.contains(String.valueOf(s.charAt(j)))){
                 count--;
